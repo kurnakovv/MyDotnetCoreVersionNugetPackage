@@ -30,6 +30,8 @@
 	  <PackageReleaseNotes>note</PackageReleaseNotes>
 
 	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
