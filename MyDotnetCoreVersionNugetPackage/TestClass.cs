@@ -4,6 +4,9 @@ using System.Text;
 
 namespace MyDotnetCoreVersionNugetPackage
 {
+    /// <summary>
+    /// Docs
+    /// </summary>
     public class TestClass
     {
     }
