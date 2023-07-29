@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyDotnetCoreVersionNugetPackage
 {
-    internal class TestClass
+    public class TestClass
     {
     }
 }
