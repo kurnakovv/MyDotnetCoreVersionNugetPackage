@@ -2,6 +2,56 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1;net5.0;net6.0;net7.0</TargetFrameworks>
+
+	  <EnablePackageValidation>true</EnablePackageValidation>
+
+	  <Title>MyDotnetCoreVersionNugetPackage</Title>
+
+	  <Authors>kurnakov</Authors>
+
+	  <Company>kurnakov</Company>
+
+	  <Description>Test</Description>
+
+	  <Copyright>MIT</Copyright>
+
+	  <PackageProjectUrl>test</PackageProjectUrl>
+
+	  <PackageIcon>NET_Core_Logo.svg.png</PackageIcon>
+
+	  <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+
+	  <RepositoryUrl>url</RepositoryUrl>
+
+	  <RepositoryType>git</RepositoryType>
+
+	  <PackageTags>tag</PackageTags>
+
+	  <PackageReleaseNotes>note</PackageReleaseNotes>
+
+	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\NET_Core_Logo.svg.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>
