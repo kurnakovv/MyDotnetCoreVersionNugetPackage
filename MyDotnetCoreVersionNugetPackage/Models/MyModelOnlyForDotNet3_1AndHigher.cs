@@ -11,7 +11,7 @@ namespace MyDotnetCoreVersionNugetPackage.Models
 {
     public static class MyModelOnlyForDotNet3_1AndHigher
     {
-        public static async Task<List<TSource>> TestMethodAsync<TSource>(this IQueryable<TSource> source, CancellationToken cancellationToken = default)
+        public static async Task<List<TSource>> TestMethodAsync3_1<TSource>(this IQueryable<TSource> source, CancellationToken cancellationToken = default)
         {
             return await source.ToListAsync(cancellationToken);
         }
