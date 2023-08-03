@@ -7,5 +7,11 @@ namespace MyDotnetCoreVersionNugetPackage
 {
     public class AppDbContext : DbContext
     {
+        public DbSet<B> Bs { get; set; }
+    }
+
+    public class B
+    {
+
     }
 }
